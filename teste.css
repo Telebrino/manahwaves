@@ -89,7 +89,7 @@ background-image: url(img/home/bgjp.jpg);
 }
 
 .l2 {
-    margin-top: 60px
+    margin-top: 60px;
 }
 
 .desc {
@@ -114,6 +114,8 @@ background-image: url(img/home/bgjp.jpg);
     opacity: 1;
     background: rgb(135,206,235, 0.75); /* O "0.75" significa a opacidade da cor do Overlay. */             
 }
+
+/* Sobre Nós */
 
 .depoimentos {
     transform-style: preserve-3d;
@@ -160,4 +162,121 @@ background-image: url(img/home/bgjp.jpg);
                translateZ(1px)
                scale(1);
 }
+
+/* Responsividade */
+    
+@media only screen and (max-width: 575px) {
+ /* Grid */
+.imagens {
+    margin:
+    left: 0;
+    right: 0;
+    position: absolute;
+    transform-style: preserve-3d;
+}
+
+.item11 {
+   transform: translateZ(1px)
+              translateY(-10%)
+              scale(0.5);
+}
+
+.item12 {
+   transform: translateZ(1px)
+       translateY(-50%)
+              scale(0.5); 
+}
+
+.item13 {
+   transform: translateZ(1px)
+              translateY(-91%)
+              scale(0.5);; 
+}
+
+.item21 {
+    transform: translateZ(1px)
+               translateY(-147%)
+               scale(0.5);
+}
+
+.item22 {
+   transform: translateZ(1px)
+              translateY(-190%)
+              scale(0.5);
+}
+
+.item23 {
+   transform: translateZ(1px)
+              translateY(-230%)
+              scale(0.5);
+}
+
+.desc {
+    font-size: 1.3vw;
+    position: relative;
+    top:30%;
+}
+
+.meio {
+    margin: auto 50px;
+}
+
+    /* Tamanho da fonte Overlay */
+    
+    .desc {
+        font-size: 2rem;
+    }
+
+    /* Sobre Nós */
+
+.depoimentos {
+    transform-style: preserve-3d;
+    position: absolute;
+    margin-top: 250%;
+    width: 100%;
+}
+
+.sobre-nos {
+    border-radius: 5%;
+    background-color: black;
+    padding: 30px;
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)
+        translateY(-28%)
+        translateZ(2.5px)
+        scale(0.6); 
+}
+
+.texto {
+    font-size: 0.7rem;
+    text-align: center;
+    color: white;
+}
+
+.sobreimg1 {
+    position: absolute;
+    width: 50%; 
+    transform: translateX(50%)
+               translateY(-100%)
+               translateZ(1.7px)
+               scale(0.8); 
+}
+
+.sobreimg2 {
+    position: absolute;
+    width: 50%;
+    right: 0;
+    transform: translateX(-50%)
+               translateY(100%)
+               translateZ(2.2px)
+               scale(0.75);
+}
+
+}
+    
+
+
+
 

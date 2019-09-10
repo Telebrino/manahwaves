@@ -14,5 +14,5 @@
 []Se terminar contato, iniciar responsividade;
 
 16/09 -
-[]Fazer responsividade no site [Se possível, usar branches para situações diferentes.];
+[Início/Sobre-nós]Fazer responsividade no site;
 []Incluir textos e imagens corretas no site;
