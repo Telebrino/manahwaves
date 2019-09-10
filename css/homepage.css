@@ -1,0 +1,143 @@
+a {
+    color: white;
+}
+
+a:hover {
+	text-decoration: none;
+    color: skyblue;
+	}
+
+.cabecalho { 
+    height: 120%;
+   font-family: 'Open Sans', sans-serif;
+    background-color: black;
+    padding: 20px;
+}
+
+.wrapper{
+	height: 100vh;
+	overflow-x: hidden;
+	perspective: 2px;
+	transform-style: preserve-3d;
+}
+
+.section{
+	position: relative;
+	height: 100vh;
+	min-width: 1800px;
+    min-height: 100%;
+	transform-style: inherit;
+    padding:0;
+}
+
+.section::before{
+	content: " ";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1; 
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+	background-repeat: no-repeat;
+	transform: translateZ(-1px) scale(1.6);
+}
+
+
+.bg1::before{
+	background-image: url("../img/home/bg1.jpg");
+}
+
+.bg2::before{
+	background-image: url("../img/home/bg2.jpg");
+}
+
+#rig {
+    max-width:900px;
+    margin: auto;
+    width: 100%;
+    font-size: 275px; /* Remember to change it back to normal font size if have captions */
+    list-style:none;
+}
+#rig li {
+    margin:auto;
+    display: inline-block;
+    *display:inline;/*for IE6 - IE7*/
+    width:100%;
+    vertical-align:middle;
+    align-content: center center;
+    padding:0;
+}
+        
+/* The wrapper for each item */
+.rig-cell {
+    margin:a50px;
+    display:block;
+    position: relative;
+    overflow:hidden;
+}
+        
+/* If have the image layer */
+.rig-img {
+    margin: auto;
+    display:block;
+    width: 100%;
+    height: auto;
+    border:none;
+    border-radius: 50%;
+}
+        
+/* If have the overlay layer */
+.rig-overlay {
+    border-radius: 50%;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+   position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .90s ease;
+	background-color: #008CBA;
+}
+
+#rig li:hover .rig-overlay {
+    opacity:0.865;
+}
+
+/* If have captions */
+.rig-text {
+    display:block;
+    padding:0 30px;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:center;
+    text-transform:capitalize;
+    font-size:1.2vw;
+    font-weight:bold;
+    font-family: 'Oswald', sans-serif;
+    font-weight:normal!important;
+    top:40%;
+    color:white;
+    opacity:0;
+    filter:alpha(opacity=0);/*For older IE*/
+    transform:translateY(-20px);
+    transition:all .3s;
+}
+#rig li:hover .rig-text {
+    transform:translateY(0px);
+    opacity:0.9;
+}
+
+    
+}
