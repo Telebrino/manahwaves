@@ -1,8 +1,9 @@
-# manahwaves
+﻿# manahwaves
 
 10/09 -
-[]Criar Menu;
+[x]Criar Menu;
 []Começar a galeria;
+[]Reduzir parallax no TranslateZ do sobre-nos;
 
 11/09 -
 []Polir galeria;
