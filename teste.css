@@ -259,8 +259,8 @@ background-image: url(img/home/bgjp.jpg);
     position: absolute;
     width: 50%; 
     transform: translateX(50%)
-               translateY(-100%)
-               translateZ(1.7px)
+               translateY(-120%)
+               translateZ(2.3px)
                scale(0.8); 
 }
 
@@ -269,9 +269,9 @@ background-image: url(img/home/bgjp.jpg);
     width: 50%;
     right: 0;
     transform: translateX(-50%)
-               translateY(100%)
-               translateZ(2.2px)
-               scale(0.75);
+               translateY(115%)
+               translateZ(2.3px)
+               scale(0.8);
 }
 
 }
